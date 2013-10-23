@@ -1,1 +1,11 @@
 C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\bin\Debug\NetworkFriendFinder.exe.config
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\bin\Debug\NetworkFriendFinder.exe
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\bin\Debug\NetworkFriendFinder.pdb
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\bin\Debug\Renci.SshNet.dll
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\bin\Debug\Renci.SshNet.xml
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\obj\Debug\NetworkFriendFinder.csprojResolveAssemblyReference.cache
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\obj\Debug\NetworkFriendFinder.Form1.resources
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\obj\Debug\NetworkFriendFinder.Properties.Resources.resources
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\obj\Debug\NetworkFriendFinder.csproj.GenerateResource.Cache
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\obj\Debug\NetworkFriendFinder.exe
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\obj\Debug\NetworkFriendFinder.pdb

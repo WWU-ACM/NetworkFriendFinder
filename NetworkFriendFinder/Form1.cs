@@ -18,17 +18,25 @@ namespace NetworkFriendFinder
 		public Form1()
 		{
 			InitializeComponent();
-			_ssh = new SshClient(Settings.Host, Settings.User, Settings.Password);
 		}
 
-		private void execBtn_Click(object sender, EventArgs e)
+		private void loginBtn_Click(object sender, EventArgs e)
 		{
-			if (!String.IsNullOrEmpty(execBtn.Text))
+			if (String.IsNullOrEmpty(userEdit.Text))
 			{
-				_ssh.Connect();
-				SshCommand cmd = _ssh.CreateCommand(execBtn.Text);
-				string response = cmd.Execute();
+				MessageBox.Show("Please enter a username.");
 			}
+			else if (String.IsNullOrEmpty(passwordEdit.Text))
+			{
+				MessageBox.Show("Please enter a password");
+			}
+			else
+			{
+				_ssh = new SshClient(Settings.Host, userEdit.Text, passwordEdit.Text);
+				_ssh.Connect();
+				MessageBox.Show(_ssh.ConnectionInfo.IsAuthenticated ? "Logged in" : "Connection Failed");
+			}
+			
 		}
 	}
 }

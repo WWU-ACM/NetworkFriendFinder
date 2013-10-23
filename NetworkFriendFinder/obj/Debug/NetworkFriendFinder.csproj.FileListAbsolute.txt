@@ -10,3 +10,5 @@ C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\obj\Debug\NetworkFrie
 C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\obj\Debug\NetworkFriendFinder.pdb
 C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\obj\Debug\NetworkFriendFinder.LoginForm.resources
 C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\obj\Debug\NetworkFriendFinder.FriendFinder.resources
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\bin\Debug\NetworkFriendFinder.Data.dll
+C:\Users\Kyle\code\NetworkFriendFinder\NetworkFriendFinder\bin\Debug\NetworkFriendFinder.Data.pdb

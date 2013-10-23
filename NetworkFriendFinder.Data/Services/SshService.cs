@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Renci.SshNet;
 using Renci.SshNet.Common;
 
-namespace NetworkFriendFinder
+namespace NetworkFriendFinder.Data.Services
 {
 	public class SshService
 	{

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Renci.SshNet;
 using Renci.SshNet.Common;
+using NetworkFriendFinder.Data.Services;
 
 namespace NetworkFriendFinder
 {

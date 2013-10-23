@@ -61,8 +61,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SshSettings.cs" />
-    <Compile Include="SshService.cs" />
     <EmbeddedResource Include="FriendFinder.resx">
       <DependentUpon>FriendFinder.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +89,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetworkFriendFinder.Data\NetworkFriendFinder.Data.csproj">
+      <Project>{3ab027b5-1600-43e0-90d7-d07bd693c4cb}</Project>
+      <Name>NetworkFriendFinder.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

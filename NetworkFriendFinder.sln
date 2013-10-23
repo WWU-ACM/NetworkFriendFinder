@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkFriendFinder", "NetworkFriendFinder\NetworkFriendFinder.csproj", "{D0A0562E-1C5E-49B4-BC7F-97E1129E5FD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkFriendFinder.Data", "NetworkFriendFinder.Data\NetworkFriendFinder.Data.csproj", "{3AB027B5-1600-43E0-90D7-D07BD693C4CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{D0A0562E-1C5E-49B4-BC7F-97E1129E5FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0A0562E-1C5E-49B4-BC7F-97E1129E5FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0A0562E-1C5E-49B4-BC7F-97E1129E5FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AB027B5-1600-43E0-90D7-D07BD693C4CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB027B5-1600-43E0-90D7-D07BD693C4CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB027B5-1600-43E0-90D7-D07BD693C4CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB027B5-1600-43E0-90D7-D07BD693C4CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

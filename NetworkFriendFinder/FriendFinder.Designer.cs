@@ -69,7 +69,7 @@
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.dataGridView1);
 			this.Name = "FriendFinder";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Friend Finder";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);

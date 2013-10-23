@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Renci.SshNet;
+using Renci.SshNet.Common;
 
 namespace NetworkFriendFinder
 {
@@ -14,9 +16,20 @@ namespace NetworkFriendFinder
 		[STAThread]
 		static void Main()
 		{
+			PasswordConnectionInfo _connectionInfo = null;
+
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+
+			LoginForm loginForm = new LoginForm();
+			DialogResult result = loginForm.ShowDialog();
+			if (result == DialogResult.OK)
+			{
+				_connectionInfo = loginForm.ConnectionInfo;
+				loginForm.Dispose();
+
+				Application.Run(new FriendFinder(_connectionInfo));
+			}
 		}
 	}
 }

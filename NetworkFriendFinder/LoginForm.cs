@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Renci.SshNet;
 using Renci.SshNet.Common;
+using NetworkFriendFinder.Data.Models;
 using NetworkFriendFinder.Data.Services;
 
 namespace NetworkFriendFinder
@@ -16,10 +17,10 @@ namespace NetworkFriendFinder
 	public partial class LoginForm : Form
 	{
 		private SshClient _ssh;
-		private PasswordConnectionInfo _connectionInfo;
-		public PasswordConnectionInfo ConnectionInfo
+		private CurrentUser _currentUser;
+		public CurrentUser CurrentUser
 		{
-			get { return _connectionInfo; }
+			get { return _currentUser; }
 		}
 
 		public LoginForm()
@@ -40,8 +41,8 @@ namespace NetworkFriendFinder
 			}
 			else
 			{
-				_connectionInfo = new PasswordConnectionInfo(SshSettings.Host, userEdit.Text, passwordEdit.Text);
-				if (SshService.TestCredentials(_connectionInfo))
+				_currentUser = new CurrentUser(userEdit.Text, passwordEdit.Text);
+				if (SshService.TestCredentials(_currentUser.GetPasswordConenctionInfo(SshSettings.Host)))
 				{
 					this.DialogResult = System.Windows.Forms.DialogResult.OK;
 					this.Close();
@@ -49,7 +50,6 @@ namespace NetworkFriendFinder
 				else
 				{
 					statusLabel.Text = "Incorrect username or password.";
-					_connectionInfo.Dispose();
 				}
 			}	
 		}

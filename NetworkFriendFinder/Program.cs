@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Renci.SshNet;
 using Renci.SshNet.Common;
+using NetworkFriendFinder.Data;
+using NetworkFriendFinder.Data.Models;
 
 namespace NetworkFriendFinder
 {
@@ -16,7 +18,7 @@ namespace NetworkFriendFinder
 		[STAThread]
 		static void Main()
 		{
-			PasswordConnectionInfo _connectionInfo = null;
+			CurrentUser _currentUser = null;
 
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
@@ -25,10 +27,10 @@ namespace NetworkFriendFinder
 			DialogResult result = loginForm.ShowDialog();
 			if (result == DialogResult.OK)
 			{
-				_connectionInfo = loginForm.ConnectionInfo;
+				_currentUser = loginForm.CurrentUser;
 				loginForm.Dispose();
 
-				Application.Run(new FriendFinder(_connectionInfo));
+				Application.Run(new FriendFinder(_currentUser));
 			}
 		}
 	}

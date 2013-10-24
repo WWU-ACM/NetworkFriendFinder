@@ -28,28 +28,28 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.otherUsersGrid = new System.Windows.Forms.DataGridView();
+			this.searchEdit = new System.Windows.Forms.TextBox();
 			this.searchLabel = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.otherUsersGrid)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// dataGridView1
+			// otherUsersGrid
 			// 
-			this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.otherUsersGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(12, 51);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(150, 248);
-			this.dataGridView1.TabIndex = 0;
+			this.otherUsersGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.otherUsersGrid.Location = new System.Drawing.Point(12, 51);
+			this.otherUsersGrid.Name = "otherUsersGrid";
+			this.otherUsersGrid.Size = new System.Drawing.Size(150, 248);
+			this.otherUsersGrid.TabIndex = 0;
 			// 
-			// textBox1
+			// searchEdit
 			// 
-			this.textBox1.Location = new System.Drawing.Point(12, 25);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(150, 20);
-			this.textBox1.TabIndex = 1;
+			this.searchEdit.Location = new System.Drawing.Point(12, 25);
+			this.searchEdit.Name = "searchEdit";
+			this.searchEdit.Size = new System.Drawing.Size(150, 20);
+			this.searchEdit.TabIndex = 1;
 			// 
 			// searchLabel
 			// 
@@ -66,12 +66,12 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(484, 311);
 			this.Controls.Add(this.searchLabel);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.searchEdit);
+			this.Controls.Add(this.otherUsersGrid);
 			this.Name = "FriendFinder";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Friend Finder";
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.otherUsersGrid)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -79,8 +79,8 @@
 
 		#endregion
 
-		private System.Windows.Forms.DataGridView dataGridView1;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.DataGridView otherUsersGrid;
+		private System.Windows.Forms.TextBox searchEdit;
 		private System.Windows.Forms.Label searchLabel;
 	}
 }
